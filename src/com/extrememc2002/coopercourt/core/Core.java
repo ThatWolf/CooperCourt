@@ -120,7 +120,17 @@ public class Core extends JavaPlugin implements CommandExecutor {
 				p.sendMessage("§cPrison Time:§e " + this.jailTime);
 				p.sendMessage("§cCourt Default Fine Amount:§e " + this.fineAmount);
 			}
-				
+			if (args[0].equalsIgnoreCase("sue")) {
+				// /court sue <name> <reason>
+				String asker = args[1]
+					
+				if (args.length < 3) {
+					asker.sendMessage("§cCorrect usage: §a/court sue <name> <reason>")
+				} else {
+					if (args.length == 3) {
+						
+				}
+			}	
 			if (args[0].equalsIgnoreCase("fine")) {
 					
 				if (args.length > 1) {
